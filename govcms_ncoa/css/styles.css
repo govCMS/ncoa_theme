@@ -127,7 +127,7 @@ body {
     max-width:1200px;
   }
 }
-#header img {
+#header #logo img {
   padding-top:25px;
 }
 ul#superfish-1 {
@@ -157,8 +157,11 @@ ul#superfish-1 {
   padding-right:25px;
   min-height:380px;
 }
-#ncoa-report h2, #ncoa-report h3, #ncoa-report h4 {
+#ncoa-report h2, #ncoa-report h3, #ncoa-report h4, #ncoa-report h4 a, #ncoa-report h2 a {
   color:white;
+}
+#ncoa-report a, #ncoa-report a:visited, #ncoa-report a:hover, #ncoa-report p {
+    color: white;
 }
 #ncoa-report img {
   border:#fb8d21 2px solid;
@@ -178,6 +181,11 @@ ul#superfish-1 {
 th {
     background-color: #153051;
     color: white;
+}
+
+/* Removing the text from sitemap */
+#site-map .site-map-message {
+    display: none;
 }
 
 /* bootstrap specific css */
