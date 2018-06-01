@@ -32,19 +32,18 @@
   <div id="main">
 
     <?php
-      // Render the sidebars to see if there's anything in them.
+      // Render the sidebar first to see if there is anything in it.
       $sidebar_first  = render($page['sidebar_first']);
       $sidebar_second = render($page['sidebar_second']);
     ?>
 
-    <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars" role="complementary">
+    <?php if ($sidebar_first): ?>
+      <aside class="sidebars col-md-3 sidebar-first" role="complementary">
         <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
       </aside>
     <?php endif; ?>
 
-    <div id="content" class="column" role="main">
+    <div id="content" <?php print $variables['content_column_class']; ?> role="main">
 
       <a href="#skip-link" id="skip-content" class="element-invisible">Go to top of page</a>
 
@@ -64,7 +63,15 @@
       <?php print $feed_icons; ?>
     </div>
 
-
+    <?php
+      // Render the sidebar second to see if there is anything in it.
+      
+    ?>
+    <?php if ($sidebar_second): ?>
+      <aside class="sidebars col-md-3 sidebar-second" role="complementary">
+        <?php print $sidebar_second; ?>
+      </aside>
+    <?php endif; ?>
 
   </div>
 
