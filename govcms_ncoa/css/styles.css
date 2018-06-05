@@ -90,7 +90,6 @@ a :focus {
 }
 
 
-
 /* ADDS */
 #page {
   box-shadow:none;
@@ -161,6 +160,9 @@ ul#superfish-1 {
 }
 #content h3, #content h2 {
   padding-top:15px;
+}
+#content {
+    width: initial;
 }
 .breadcrumb {
     border-bottom: solid 3px #153051;
