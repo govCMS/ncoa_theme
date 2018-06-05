@@ -23,7 +23,7 @@
 
 <?php print render($page['navigation']); ?>
 
-<div id="page">
+<div id="page" class="row">
 
   <?php print render($page['highlighted']); ?>
 

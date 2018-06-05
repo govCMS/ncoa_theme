@@ -99,9 +99,23 @@ a :focus {
  color:#333;
  text-transform:none;
 }
-#content {
-    width: 100%;
+
+/* Adds the arrow to the current menu item */
+li.menu__item.is-active-trail.is-leaf.leaf.active-trail {
+    background: white;
 }
+li.menu__item.is-active-trail.is-leaf.leaf.active-trail::before {
+    content: "▶";
+    color: orange;
+    font-size: 1.2em;
+    position: absolute;
+    padding: 0 .5em;
+}
+a.menu__link.is-active-trail.active-trail.active {
+    background: white;
+    padding-left: 2em;
+}
+
 #footer a {
   text-decoration:none;
 }
@@ -165,6 +179,7 @@ ul#superfish-1 {
 }
 #ncoa-report img {
   border:#fb8d21 2px solid;
+  margin: auto;
 }
 @media (max-width:500px) {
     .header__region {
