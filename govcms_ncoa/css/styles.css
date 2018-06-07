@@ -161,8 +161,11 @@ ul#superfish-1 {
 #content h3, #content h2 {
   padding-top:15px;
 }
-#content {
-    width: initial;
+#content.col-md-9 {
+    width: 75%;
+}
+#content.col-md-9 {
+    width: 75%;
 }
 .breadcrumb {
     border-bottom: solid 3px #153051;
@@ -200,6 +203,13 @@ th {
     color: white;
 }
 
+ /*Table Styles */
+
+td, th {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+}
 /* Removing the text from sitemap */
 #site-map .site-map-message {
     display: none;
@@ -1027,8 +1037,15 @@ th {
     }
 }
 .text-right {
-    text-align: right
+    text-align: right;
 }
 .text-center {
-    text-align: center
+    text-align: center;
+}
+.centerImage img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerImage img {
+    text-align: center;
 }
