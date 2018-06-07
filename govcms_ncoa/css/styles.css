@@ -161,12 +161,24 @@ ul#superfish-1 {
 #content h3, #content h2 {
   padding-top:15px;
 }
-#content.col-md-9 {
-    width: 75%;
+#content.col-md-6 {
+    width: 50%;
 }
 #content.col-md-9 {
     width: 75%;
 }
+#content.col-md-12 {
+    width: 100%;
+}
+@media (max-width: 991px) {
+    #content.col-md-9 {
+        width: 100%;
+    }
+    #content.col-md-6 {
+        width: 100%;
+    }
+}
+
 .breadcrumb {
     border-bottom: solid 3px #153051;
 }
