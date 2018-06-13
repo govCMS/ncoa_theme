@@ -100,17 +100,17 @@ a :focus {
 }
 
 /* Adds the arrow to the current menu item */
-li.menu__item.is-active-trail.is-leaf.leaf.active-trail {
+.sidebar-first li.menu__item.is-active-trail.is-leaf.leaf.active-trail {
     background: white;
 }
-li.menu__item.is-active-trail.is-leaf.leaf.active-trail::before {
+.sidebar-first li.menu__item.is-active-trail.is-leaf.leaf.active-trail::before {
     content: "▶";
     color: orange;
     font-size: 1.2em;
     position: absolute;
     padding: 0 .5em;
 }
-a.menu__link.is-active-trail.active-trail.active {
+.sidebar-first a.menu__link.is-active-trail.active-trail.active {
     background: white;
     padding-left: 2em;
 }
@@ -133,7 +133,11 @@ body {
   background-color: #f3f3f3;
   background-image: url(../images/background.png);
 }
-
+.recommendationBox {
+    background-color: #DBE5F1;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+}
 @media (min-width: 980px) {
   #page,
   .region-bottom {
@@ -210,18 +214,38 @@ ul#superfish-1 {
   background: #153051;
   font-size:1em;
 }
+/* Recommend box styles */
+.recommendationBox ol {
+    list-style-type: lower-alpha;
+}
+.recommendationBox ol > li > ol {
+    list-style-type: lower-roman;
+}
+
+
+ /*Table Styles */
 th {
     background-color: #153051;
     color: white;
 }
-
- /*Table Styles */
-
-td, th {
+.table td,.table th {
     border: 1px solid;
     text-align: center;
     padding: 5px;
+    width: 100%;
 }
+/* custom styling for some tables with images (that are not really tables) */
+.table-no-border td, .table-no-border th {
+    border: none;
+}
+.table-no-border img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-no-border td, .table-no-border th {
+   width: 100%;
+}
+
 /* Removing the text from sitemap */
 #site-map .site-map-message {
     display: none;
