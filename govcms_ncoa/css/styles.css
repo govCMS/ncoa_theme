@@ -214,11 +214,15 @@ ul#superfish-1 {
   background: #153051;
   font-size:1em;
 }
+
+#content ol > li > ol {
+    list-style-type: lower-roman;
+}
 /* Recommend box styles */
-.recommendationBox ol {
+#content .recommendationBox ol {
     list-style-type: lower-alpha;
 }
-.recommendationBox ol > li > ol {
+#content .recommendationBox ol > li > ol {
     list-style-type: lower-roman;
 }
 
@@ -232,7 +236,6 @@ th {
     border: 1px solid;
     text-align: center;
     padding: 5px;
-    width: 100%;
 }
 /* custom styling for some tables with images (that are not really tables) */
 .table-no-border td, .table-no-border th {
@@ -242,7 +245,7 @@ th {
     margin-left: auto;
     margin-right: auto;
 }
-.table-no-border td, .table-no-border th {
+table.table, table.table-no-border {
    width: 100%;
 }
 
